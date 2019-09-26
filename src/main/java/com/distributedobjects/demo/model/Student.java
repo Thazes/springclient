@@ -1,12 +1,22 @@
 package com.distributedobjects.demo.model;
 
 public class Student {
+    private int id;
     private int studentId;
     private String firstName;
 
-    public Student(int studentId, String firstName) {
+    public Student(int id, int studentId, String firstName) {
+        this.id = id;
         this.studentId = studentId;
         this.firstName = firstName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getStudentId() {
